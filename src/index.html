@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head class="page">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <title>TechStore</title>
+</head>
+<body class="page__body">
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__content">
+        <div class="header__left">
+          <nav class="header__nav nav">
+            <ul class="nav__list list-reset">
+              <li class="nav__item">
+                <a class="nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__right">
+          <div class="header__signin signin">
+            <a class="signin__link" href="#">Войти</a>
+          </div>
+          <div class="header__ad-placement ad-placement">
+            <a class="ad-placement__link" href="#">Разместить объявление</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="search">
+      <div class="search__container container">
+        <div class="search__logo logo">
+          <a class="logo__link" href="index.html">
+            <img src="./assets/images/logo.svg" alt="TechStore">
+          </a>
+        </div>
+        <div class="search__box">
+          <input class="search__input" placeholder="Введите текст..." type="text">
+          <button class="search__button button-reset">Найти</button>
+        </div>
+      </div>
+    </section>
+    <section class="advertisements">
+      <div class="advertisements__container container">
+        <h2 class="advertisements__heading section-heading">Объявления</h2>
+        <ul class="advertisements__list list-reset"></ul>
+      </div>
+    </section>
+  </main>
+  <script src="./js/getAdvertisements.js"></script>
+</body>
+</html>

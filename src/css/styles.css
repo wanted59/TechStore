@@ -1,0 +1,131 @@
+@import url("./_variables.css");
+@import url("./_reset.css");
+@import url("./_general.css");
+@import url("./_fonts.css");
+
+/* ------------ Header ------------ */
+.header {
+  padding: 14px 0px;
+  background-color: var(--color-main);
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__right {
+  display: flex;
+  gap: 0 30px;
+}
+
+.nav__link, .signin__link, .ad-placement__link {
+  font-size: 14px;
+  line-height: 1;
+  color: var(--color-text-primary);
+  transition: color .2s ease;
+}
+
+.nav__link:hover, .signin__link:hover {
+  color: var(--color-text-primary-hovered);
+}
+
+/* Ad placement */
+.ad-placement__link {
+  padding: 5px 15px;
+  background-color: var(--color-link-bgc);
+  border-radius: 5px;
+  transition: background-color .2s ease;
+}
+
+.ad-placement__link:hover {
+  background-color: var(--color-link-bgc-hovered);
+}
+
+/* ------------ Search ------------ */
+.search {
+  padding: 60px 0px;
+  border-bottom: 1px solid var(--color-section-border);
+}
+
+.search__container {
+  display: flex;
+  align-items: center;
+}
+
+.search__box {
+  flex: 1 0 80%;
+  display: flex;
+}
+
+.search__input {
+  width: 100%;
+  padding: 10px;
+  transform: translateX(10px);
+  font-size: 18px;
+  color: var(--color-text-primary-dark);
+  border: 2px solid var(--color-main);
+  border-radius: 5px;
+}
+
+.search__input:focus {
+  outline: none;
+}
+
+.search__input::placeholder {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+}
+
+.search__button {
+  padding: 0px 20px;
+  background-color: var(--color-main);
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  color: var(--color-text-primary);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ------------ Advertisements ------------ */
+.advertisements {
+  padding: 30px 0px;
+}
+
+.advertisements__heading {
+  margin-bottom: 30px;
+}
+
+.advertisements__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Advertisement */
+.advertisement {
+  flex: 0 1 calc(100% / 4 - 20px * 3 / 4);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.advertisement__img {
+  max-width: 100%;
+}
+
+.advertisement__title {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: var(--color-advertisement-title);
+}
+
+.advertisement__title:hover {
+  text-decoration: underline;
+}
+
+.advertisement__price {
+  color: var(--color-advertisement-price);
+}

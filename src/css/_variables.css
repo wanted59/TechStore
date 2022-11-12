@@ -1,0 +1,18 @@
+:root {
+  /* Colors */
+  --color-main: #737373;
+
+  --color-text-primary-dark: #737373;
+  --color-text-primary: #F5F5F5;
+  --color-text-primary-hovered: #E5E5E5;
+
+  --color-link-bgc: #BFDBFE;
+  --color-link-bgc-hovered: #a6cefc;
+
+  --color-section-heading: #202020;
+  --color-section-border: #f1f1f1;
+  --color-section-shadow: #e2e2e2;
+
+  --color-advertisement-title: #62a9ff;
+  --color-advertisement-price: #505050;
+}
